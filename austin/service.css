@@ -1,0 +1,443 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+    /* list-style: none; */
+
+    text-decoration: none;
+    /* scroll-padding-top: 2rem;
+    scroll-behavior: smooth; */
+
+}
+
+.bx {
+    padding-right: 2rem;
+}
+
+.service-text .service2 .par {
+    font-size: 5rem;
+    padding-top: 0.5rem;
+    font-family: sans-serif;
+    padding-bottom: 0;
+    padding-top: 2rem;
+}
+
+header {
+    background: black;
+    height: 5rem;
+    color: aliceblue;
+    padding-right: 1.5rem;
+    cursor: pointer;
+}
+
+.number .bx {
+    padding-right: 0.5rem;
+}
+
+.number {
+    font-size: 2em;
+    padding-top: 1.5rem;
+    text-align: right;
+}
+
+.service-text .service2 .para {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    padding-top: 2em;
+
+
+}
+
+.service-text .service2 .par {
+    padding-top: 1.5em;
+}
+
+.service-text .service2 {
+    line-height: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.service-space {
+    background: black;
+    border-radius: 50%;
+    width: 40rem;
+    height: 40rem;
+    padding-left: 1rem;
+}
+
+.space {
+    padding-left: 2rem;
+    padding-top: 5rem;
+
+}
+
+.service-text .para,
+.service-text .pat,
+.service-text .parti {
+    font-weight: 400;
+    line-height: 1.7rem;
+}
+
+.space img {
+    width: 20rem;
+}
+
+.service-text li {
+    line-height: 1.7rem;
+}
+
+
+
+
+
+
+
+.service-space {
+
+    display: grid;
+    /* gap: 5rem; */
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    padding-top: 1rem;
+
+
+
+}
+
+.service-text h2 {
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.service-text h2 {
+    padding-top: 1rem;
+}
+
+.service-text {
+    line-height: 2.2rem;
+    padding-right: 5rem;
+    padding-top: 4rem;
+}
+
+/* .services {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.service1 .service2 .par {
+    font-size: 3.5rem;
+}
+
+.servicess {
+    display: grid;
+    gap: 6rem;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+    padding-top: 0.5px;
+
+}
+
+.service-space .three {
+    padding-left: 2em;
+    padding-top: 5rem;
+}
+
+.service-space .two {
+    padding-top: 5rem;
+}
+
+.service-space .four {
+    padding-left: 9rem;
+    width: 30rem;
+}
+
+.serve {
+
+    display: grid;
+    /* gap: 5rem; */
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+
+
+
+}
+
+.services {
+    padding-bottom: 6rem;
+}
+
+.serve {
+    padding-top: 1rem;
+}
+
+.service-spaced {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 4rem;
+    margin-top: 3rem;
+
+}
+
+
+
+.ser {
+    padding-left: 4rem;
+    background: black;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ser h1 {
+    font-size: 2em;
+    font-family: sans-serif;
+    color: white;
+    padding-top: 0.5em;
+}
+
+.spaced img {
+    width: 340px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+@media (max-width: 1112px) {
+    .servicess {
+        display: grid;
+        /* /* gap: 6rem;
+        padding: 20px; */
+        grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+        padding-top: 0.5px;
+
+    }
+
+    .service-text {
+        padding-top: 0.2rem;
+    }
+
+
+
+    .space {
+        padding-left: 10rem;
+    }
+
+    .space {
+        display: none;
+    }
+
+    .service1 .service2 .par {
+        font-size: 4rem;
+    }
+
+    .service1 {
+        top: 0.2rem;
+        padding-left: 2rem;
+    }
+
+    .pat {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 2rem;
+        line-height: 1.7rem;
+
+    }
+
+    .service-text .pat {
+        font-size: 1.4rem;
+    }
+
+    .pat h1 {
+        font-size: 1.2rem;
+    }
+
+    .service-text ul {
+        padding-left: 5rem;
+        padding-top: 1rem;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+
+    .parti {
+        padding-top: 1rem;
+        padding-left: 2rem;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+
+
+
+
+}
+
+@media (max-width: 800px) {
+    .service-text {
+        padding-top: 0.2em;
+    }
+
+    .service-text .service2 .par {
+        padding-top: 4rem;
+    }
+
+    .service-text ul {
+        line-height: 1.7rem;
+        font-size: 1.1rem;
+    }
+
+    .service-text .pat {
+        font-size: 1.1rem;
+    }
+
+    .parti {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 414px) {
+    .space {
+        display: none;
+    }
+
+    .spaced {
+        padding-top: 0.1rem;
+    }
+
+    .sew {
+        padding-top: 0rem;
+
+    }
+
+    .ser {
+        padding-left: 2rem;
+    }
+
+
+
+    .service-text .service2 .par {
+        padding-top: 3.5rem;
+        padding-left: 0em;
+    }
+
+    .service-text .para {
+        line-height: 1.4rem;
+        padding-left: 0rem;
+
+    }
+
+    .service1 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .service-text ul {
+        padding-left: 3rem;
+        padding-right: 2rem;
+    }
+
+    .pat {
+        padding-left: 1rem;
+    }
+
+    /* .service-text ul {
+        padding-left: 4rem;
+        padding-right: 1rem;
+    } */
+
+    .service-spaced {
+        padding-left: 0rem;
+        padding-right: 2rem;
+    }
+
+    .parti {
+        padding-left: 1rem;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .service-text .par {
+        font-size: 1rem;
+    }
+
+    .number {
+        font-size: 1.7rem;
+    }
+
+    .service-text .service2 .par {
+        font-size: 3.5rem;
+        padding-top: 3.5rem;
+        padding-left: 0rem;
+    }
+
+    .pat {
+        padding-left: 0rem;
+        padding-right: 5rem;
+    }
+
+    .service1 {
+        padding-left: 0rem;
+        padding-right: 3rem;
+    }
+
+    .service-text ul {
+        padding-left: 2rem;
+        padding-right: 4.5rem;
+    }
+
+    .parti {
+        padding-left: 0rem;
+        padding-right: 2rem;
+    }
+
+
+
+
+}
+
+@media (max-width: 320px) {
+    .service-text .par {
+        font-size: 1rem;
+    }
+
+    .number {
+        font-size: 1.7rem;
+    }
+
+    .service-text .service2 .par {
+        font-size: 3rem;
+        padding-top: 3rem;
+        padding-left: 0rem;
+    }
+
+    .pat {
+        padding-left: 0rem;
+        padding-right: 8rem;
+    }
+
+    .service1 {
+        padding-left: 0rem;
+        padding-right: 6rem;
+    }
+
+    .service-text ul {
+        padding-left: 2rem;
+        padding-right: 8rem;
+    }
+
+    header {
+        height: 4rem;
+    }
+
+    .parti {
+        padding-left: 0rem;
+        padding-right: 8rem;
+    }
+
+
+
+
+}

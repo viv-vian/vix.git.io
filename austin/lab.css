@@ -1,0 +1,422 @@
+ header {
+     background: black;
+     height: 5rem;
+     color: aliceblue;
+     padding-right: 1.5rem;
+     cursor: pointer;
+ }
+
+ * {
+     font-family: sans-serif;
+     margin: 0;
+
+ }
+
+ .number .bx {
+     padding-right: 0.5rem;
+ }
+
+ .number {
+     font-size: 2em;
+     padding-top: 1.5rem;
+     text-align: right;
+ }
+
+ img {
+     max-width: 100%;
+     height: auto;
+ }
+
+ .home {
+     max-width: 988px;
+     margin-left: auto;
+     margin-right: auto;
+     justify-content: center;
+     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+ }
+
+ .ser {
+     grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+     display: grid;
+     gap: 6px;
+     font-size: 2em;
+     padding: 20px;
+
+ }
+
+ .service-text .part {
+     padding-left: 4rem;
+     font-size: 1.4rem;
+     padding-top: 0.5rem;
+     padding-bottom: 1rem;
+ }
+
+ .service-text .dice {
+     padding-left: 6rem;
+     font-size: 1.4rem;
+     line-height: 2.1rem;
+ }
+
+ .services {
+     padding-bottom: 6rem;
+ }
+
+ .serve {
+     padding-top: 1rem;
+ }
+
+ .service-spaced {
+
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+     gap: 1rem;
+     margin-top: 3rem;
+
+ }
+
+
+ .ser h1 {
+     font-size: 2em;
+     font-family: sans-serif;
+     color: white;
+ }
+
+ .spaced img {
+     width: 580px;
+     height: 250px;
+     border-radius: 20px;
+     padding-top: 6rem;
+     padding-left: 2rem;
+ }
+
+ .dice1 {
+     padding-top: 0.5em;
+     padding-left: 12rem;
+ }
+
+ .dice2 {
+     padding-top: 0.5em;
+     padding-right: 9rem;
+ }
+
+ .service-text {
+     padding-top: 50px;
+ }
+
+
+
+ .service2 .par {
+     text-align: center;
+ }
+
+ .set .part {
+     padding-left: 12rem;
+     padding-right: 9rem;
+     font-size: 2em;
+     padding-top: 1.5rem;
+ }
+
+ .home1 {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+     gap: 5rem;
+     margin-top: 5rem;
+ }
+
+ .home1 .pic {
+     padding: 30px;
+
+     position: relative;
+ }
+
+ .home1 img {
+     width: 400px;
+     height: 200px;
+     object-fit: contain;
+     object-position: center;
+ }
+
+ .service-text .par {
+     font-size: 3rem;
+     font-family: sans-serif;
+     padding-top: 2rem;
+     color: black;
+ }
+
+
+ .service-text .part {
+     font-weight: 400;
+     font-family: sans-serif;
+     font-size: 1.2rem;
+     line-height: 2.1rem;
+ }
+
+ .service-text li {
+     font-size: 1.1rem;
+ }
+
+ @media (max-width: 1080px) {
+     .spaced img {
+         padding-top: 2rem;
+         width: 400px;
+     }
+
+     .service-text .par {
+         padding-left: 1rem;
+         display: inline;
+         font-size: 2.3rem;
+         padding-top: 1rem;
+
+     }
+
+     .service-text .part {
+         line-height: 2.1rem;
+     }
+
+     .service-text .dice {
+         line-height: 2.1rem;
+     }
+
+     .service-text {
+         padding-top: 2rem;
+     }
+ }
+
+ @media (max-width: 414px) {
+     .spaced img {
+         padding-top: 1px;
+         padding-left: 1rem;
+         width: 900px;
+         padding: 20px;
+
+     }
+
+     .service-text {
+         padding-top: 1rem;
+     }
+
+     .service-text .service2 .par {
+         padding-top: 3rem;
+         padding-left: 0em;
+         padding-right: 21rem;
+     }
+
+
+
+     img {
+         max-width: 50%;
+         height: auto;
+     }
+
+     .ser {
+         padding-top: 1rem;
+         /* padding-left: 1rem; */
+         gap: 0rem;
+         padding: 1px;
+     }
+
+     .service-text .par {
+         padding-left: 0.2rem;
+         font-size: 0.2rem;
+         padding-top: 1rem;
+     }
+
+     .service-text .part {
+         padding-left: 0rem;
+         padding-right: 10.5rem;
+         line-height: 2.2rem;
+     }
+
+
+
+
+
+     .service-text .dice {
+         padding-left: 2rem;
+         line-height: 2.2rem;
+         font-size: 1.2rem;
+     }
+
+     .number {
+         font-size: 1.7rem;
+     }
+ }
+
+ @media (max-width: 1112px) {
+     .service-text .par {
+         padding-left: 1.3rem;
+         display: inline;
+         font-size: 2.2rem;
+         padding-top: 1rem;
+     }
+
+     .service-text .part {
+         padding-left: 2.2rem;
+
+         line-height: 2.1rem;
+
+     }
+
+     .service-text .dice {
+         padding-left: 4.7rem;
+         line-height: 2.1rem;
+     }
+
+     .spaced img {
+         padding-top: 4rem;
+     }
+
+     .service-text .service2 .par {
+         font-size: 2rem;
+         padding-top: 2.5rem;
+         padding-left: 0rem;
+     }
+ }
+
+ @media (max-width: 375px) {
+     .service-text .par {
+         padding-left: 0.2rem;
+         display: inline;
+         font-size: 1.6rem;
+         padding-top: 1rem;
+     }
+
+     .service-text .part {
+         padding-left: 0.2rem;
+         padding-right: 14rem;
+         line-height: 2rem;
+     }
+
+     .spaced img {
+         padding-left: 2rem;
+         padding-right: 5rem;
+     }
+
+     .service-text .dice {
+         padding-left: 2.8rem;
+     }
+
+
+
+     img {
+         max-width: 30%;
+     }
+ }
+
+ @media (max-width: 320px) {
+     img {
+         max-width: 30%;
+         height: auto;
+     }
+
+     .service-text .par {
+         padding-left: 0.2rem;
+         display: inline;
+         font-size: 1.1rem;
+         padding-top: 1rem;
+         padding-right: 0.5rem;
+     }
+
+     .service-text .part {
+         padding-left: 0.2rem;
+         font-size: 1rem;
+         padding-right: 17rem;
+         line-height: 1.7rem;
+     }
+
+     .service-text {
+         padding-top: 0rem;
+     }
+
+
+
+
+
+
+
+     .number {
+         font-size: 1.5rem;
+     }
+
+     header {
+         height: 4rem;
+     }
+
+     .service-text .dice {
+         font-size: 1rem;
+         padding-left: 1.9rem;
+         line-height: 1.7rem;
+
+     }
+
+
+
+     .dice li {
+
+
+         font-size: 1rem;
+
+
+     }
+
+
+
+
+
+ }
+
+ @media (max-width: 800px) {
+     .ser {
+         grid-template-columns: repeat(auto-fit, minmax(560px, auto));
+         display: grid;
+         gap: 6px;
+         font-size: 2em;
+         padding: 20px;
+
+     }
+
+     .spaced img {
+         padding-top: 0.2rem;
+         padding-left: 5rem;
+     }
+
+ }
+
+
+
+
+ @media (min-width: 1856px) {
+     .service-text .part {
+         padding-left: 7rem;
+         padding-right: 7rem;
+         font-size: 1.2rem;
+         line-height: 2.1rem;
+     }
+
+     .service-text .par {
+         padding-left: 1rem;
+
+     }
+
+     .service-text .service2 .par {
+         padding-left: 2rem;
+     }
+
+     .service-text .dice {
+         padding-left: 11rem;
+         font-size: 3rem;
+         line-height: 2.1rem;
+     }
+
+     .part {
+         padding-left: 9rem;
+         padding-top: 1rem;
+         padding-bottom: 1rem;
+     }
+
+     .service-text ul {
+         padding-left: 11rem;
+     }
+
+
+ }

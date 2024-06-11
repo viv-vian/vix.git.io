@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 5rem;
+    color: white;
+    background: black;
+    padding-right: 12em;
+}
+
+
+header h1 {
+    font-size: 1.9rem;
+    text-align: right;
+    padding-top: 0.5em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 1.5rem;
+    font-size: 0.5rem;
+    padding-left: 4rem;
+    padding-top: 3rem;
+}
+
+.cont h2 {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.cont a:hover {
+    color: grey;
+}
+
+.cont a {
+    font-weight: 400;
+    color: black;
+
+}
+
+.cont .bx,
+.cont2 .bx {
+    font-size: 2rem;
+    color: rgb(246, 183, 68);
+
+}
+
+.cont2 {
+    padding-left: 4rem;
+    padding-top: 2rem;
+}
+
+.cont2 h2 {
+    padding-top: 0.5rem;
+}
+
+@media (max-width: 800px) {
+    .number {
+        padding-left: 38rem;
+    }
+}
+
+@media (max-width: 414px) {
+    .number {
+        padding-left: 18rem;
+    }
+
+
+}
+
+@media (max-width: 375px) {
+    .number {
+        padding-left: 15rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .number {
+        padding-left: 12rem;
+    }
+
+    .con1 {
+        padding-left: 0.9;
+    }
+
+
+
+}
