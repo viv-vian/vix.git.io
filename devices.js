@@ -138,10 +138,22 @@ const autoSlide = function () {
     }, 7000);
 }
 addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseover", function () {
-
     clearInterval(autoSlideInterval);
 });
 
 addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseout", autoSlide);
 
 window.addEventListener("load", autoSlide);
+
+
+const nav = document.querySelector(".nav");
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+    if (lastScrollY < window.scrollY) {
+        nav.classList.add("nav--hidden");
+    } else {
+        nav.classList.remove("nav--hidden");
+    }
+    lastScrollY = window.scrollY;
+});
