@@ -1,251 +1,3067 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="devices.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
-    <title>Musicfy</title>
+    <link rel="stylesheet" href="work.css">
+    <link rel="shortcut icon" href="./assets/images/logo/favicon.icon" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="@import url('https://fonts.googleapis.com/css2?family=poppins:wght@400;500;600$display=swap"
+        rel="stylesheet">
+    <title>Document</title>
 </head>
 
 <body>
-    <div class="log">
-        <img src="IMG_24691.JPG" alt="">
-    </div>
-
-    <header class="header" id="header">
-        <nav class="nav container">
-
-            <div class="nav--menu" id="nav-menu">
-
-                <ul class="nav--list">
-                    <li class="nav--item">
-                        <a href="#home" class="nav--link active-link">Work </a>
-                    </li>
-                    <li class="nav--ite">
-                        <a href="https://okparamelodyy@gmail.com" class="nav--link active-link">Contact<i
-                                class="ri-close-line"></i>me</a>
-                    </li>
+    <div class="overlay " data-overlay></div>
 
 
 
+    <div class="modal closed" data-modal>
+        <div class="modal-close-overlay" data-modal-overlay></div>
+        <div class="modal-content">
+            <button class="modal-close-btn" data-modal-close>
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
 
-
-
-                </ul>
-
-
-                <div class="nav--close" id="nav-close">
-                    <i class="bx bx-menu-alt-left"></i>
-                </div>
+            <div class="newsletter-img">
+                <img src="https://img.freepik.com/free-photo/horizontal-view-attractive-young-black-man-with-toothy-smile-shows-okay-gesture-says-alright-likes-somebodys-idea_273609-23585.jpg?size=626&ext=jpg&ga=GA1.1.504372548.1700062447&semt=sph"
+                    alt="subscribe newsletter" width="400" height="400">
             </div>
 
+            <div class="newsletter">
+                <form action="#">
+                    <div class="newsletter-header">
+                        <h3 class="newsletter-title">
+                            Subscribe Newsletter.
+                        </h3>
+                        <p class="newsletter-desc">
+                            Lorem ipsum dolor sit amet consectetur kekdsjd ejdkd.
+                        </p>
+                    </div>
 
-            <div class="nav--toogle" id="nav-toggle">
-                <i class='ri-menu-line'></i>
+                    <input type="email" name="email" class="email-feild" placeholder="Email Address" required>
+
+                    <button type="submit" class="btn-newsletter">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="notification-toast closed" data-toast>
+        <button class="toast-class-btn" data-toast-close>
+            <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <div class="toast-banner">
+            <img src="https://img.freepik.com/free-photo/bohemian-man-with-his-arms-crossed_1368-3542.jpg?size=626&ext=jpg&ga=GA1.1.504372548.1700062447&semt=sph"
+                width="80" height="70" alt="">
+        </div>
+
+        <div class="toast-detail">
+            <p class="toast-message">
+                Lorem ipsum dolor sit.
+            </p>
+            <p class="toast-title">
+                hdkbn krl fmke cm
+            </p>
+            <p class="toast-meta">
+                <time datetime="PT2M">2 minutes</time> ago
+            </p>
+
+        </div>
+    </div>
+
+
+
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <ul class="header-social-container">
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="header-alert-news">
+                    <p>
+                        <b>free Shipping</b>
+                        This Week Order Over - $55
+                    </p>
+                </div>
+
+                <div class="header-top-actions">
+                    <select name="currency">
+                        <option value="usd">USD &dollar;</option>
+                        <option value="eur">EUR &euro;</option>
+                    </select>
+
+                    <select name="language">
+                        <option value="en-US">English</option>
+                        <option value="es-ES">Espa&ntilde;ol</option>
+                        <option value="fr">fran&ccedil;ais</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="container">
+                <a href="#" class="header-logo">
+                    <img src="https://img.freepik.com/free-psd/deboss-logo-mockup-psd-company_53876-144930.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=ais"
+                        alt="Anon's logo" width="120" height="36">
+                </a>
+                <div class="header-search-container">
+                    <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
+                    <button class="search-btn">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+                </div>
+
+                <div class="header-user-actions">
+                    <button class="action-btn">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </button>
+
+                    <button class="action-btn">
+                        <ion-icon name="heart-outline"></ion-icon>
+                        <span class="count">0</span>
+                    </button>
+
+                    <button class="action-btn">
+                        <ion-icon name="bag-handle-outline"></ion-icon>
+                        <span class="count">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <nav class="desktop-navigation-menu">
+            <div class="container">
+                <ul class="desktop-menu-category-list">
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Home</a>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Categories</a>
+                        <div class="dropdown-panel">
+                            <ul class="dropdown-panel-list">
+                                <li class="menu-title">
+                                    <a href="#">Electronics</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Desktop</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Laptop</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Camera</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Tablet</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Headphone</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">
+                                        <img src="https://img.freepik.com/free-photo/levitating-music-headphones-display_23-2149817602.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=ais"
+                                            alt="headphone collection" width="250" height="119">
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="dropdown-panel-list">
+                                <li class="menu-title">
+                                    <a href="#">Electronics</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Desktop</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Laptop</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Camera</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Tablet</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Headphone</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">
+                                        <img src="https://img.freepik.com/free-photo/levitating-music-headphones-display_23-2149817602.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=ais"
+                                            alt="headphone collection" width="250" height="119">
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="dropdown-panel-list">
+                                <li class="menu-title">
+                                    <a href="#">Electronics</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Desktop</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Laptop</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Camera</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Tablet</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Headphone</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">
+                                        <img src="https://img.freepik.com/free-photo/levitating-music-headphones-display_23-2149817602.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=ais"
+                                            alt="headphone collection" width="250" height="119">
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="dropdown-panel-list">
+                                <li class="menu-title">
+                                    <a href="#">Electronics</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Desktop</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Laptop</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Camera</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Tablet</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">Headphone</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="#">
+                                        <img src="https://img.freepik.com/free-photo/levitating-music-headphones-display_23-2149817602.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=ais"
+                                            alt="headphone collection" width="250" height="119">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Men's</a>
+
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item">
+                                <a href="#">Shirt</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">Shorts & jeans</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">Safety Shoes</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">wallet</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Women's</a>
+
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item">
+                                <a href="#">Dress & Frock</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">Earrings</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">Necklace</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">Makeup kit</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Jewelry</a>
+
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item">
+                                <a href="#">Earrings</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">Couple Rings</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">Necklace</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">Bracelets</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Perfume</a>
+
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item">
+                                <a href="#">Clothes perfume</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">SDeodorant</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">Flower Fragrance</a>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <a href="#">Air Freshener</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Blog</a>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="#" class="menu-title">Hot Offers</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="mobile-bottom-navigation">
+            <button class="action-btn" data-mobile-menu-open-btn>
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+
+            <button class="action-btn">
+                <ion-icon name="bag-handle-outline"></ion-icon>
+                <span class="count">0</span>
+            </button>
+
+            <button class="action-btn">
+                <ion-icon name="home-outline"></ion-icon>
+            </button>
+
+            <button class="action-btn">
+                <ion-icon name="heart-outline"></ion-icon>
+                <span class="count">0</span>
+            </button>
+
+            <button class="action-btn" data-mobile-menu-open-btn>
+                <ion-icon name="grid-outline"></ion-icon>
+            </button>
+        </div>
+
+        <nav class="mobile-navigation-menu has-scrollbar" data-mobile-menu>
+            <div class="menu-top">
+                <h2 class="menu-title">Menu</h2>
+
+                <button class="menu-close-btn" data-mobile-menu-close-btn>
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+
+            <ul class="mobile-menu-category-list">
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Home</a>
+                </li>
+
+                <li class="menu-category">
+                    <button class="accordion-menu" data-accordion-btn>
+                        <p class="menu-title">Men's</p>
+
+                        <div>
+                            <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                            <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                        </div>
+                    </button>
+
+                    <ul class="submenu-category-list" data-accordion>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title">Shirts</a>
+                        </li>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title">Shorts & Jeans</a>
+                        </li>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title">Safety Shoes</a>
+                        </li>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title">wallet</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-category">
+                    <button class="accordion-menu" data-accordion-btn>
+                        <p class="menu-title">Women's</p>
+
+                        <div>
+                            <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                            <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                        </div>
+                    </button>
+
+                    <ul class="submenu-category-list" data-accordion>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title">Dress & Frock</a>
+                        </li>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title">Earrings</a>
+                        </li>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title">Necklace</a>
+                        </li>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title">Makeup kit</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-category">
+                    <button class="accordion-menu" data-accordion-btn>
+                        <p class="menu-title">Jewelry</p>
+
+                        <div>
+                            <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                            <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                        </div>
+                    </button>
+
+                    <ul class="submenu-category-list" data-accordion>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title">Earrings</a>
+                        </li>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title">Couple Rings</a>
+                        </li>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title">Necklace</a>
+                        </li>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title">Bracelets</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-category">
+                    <button class="accordion-menu" data-accordion-btn>
+                        <p class="menu-title">Perfume</p>
+
+                        <div>
+                            <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                            <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                        </div>
+                    </button>
+
+                    <ul class="submenu-category-list" data-accordion>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title">Clothes perfume</a>
+                        </li>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title">Deodorant</a>
+                        </li>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title">Flower Fragrance</a>
+                        </li>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title">Air Freshener</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Blog</a>
+                </li>
+
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Hot Offers</a>
+                </li>
+            </ul>
+
+            <div class="menu-bottom">
+                <ul class="menu-category-list">
+                    <li class="menu-category">
+                        <button class="accordion-menu" data-accordion-btn>
+                            <p class="menu-title">language</p>
+
+                            <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+                        </button>
+
+                        <ul class="submenu-category-list" data-accordion>
+                            <li class="submenu-category">
+                                <a href="#" class="submenu-title">English</a>
+                            </li>
+
+                            <li class="submenu-category">
+                                <a href="#" class="submenu-title">Espa&ntilde;ol</a>
+                            </li>
+
+                            <li class="submenu-category">
+                                <a href="#" class="submenu-title">Fren&ccedil;h</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-category">
+                        <button class="accordion-menu" data-accordion-btn>
+                            <p class="menu-title">Currency</p>
+
+                            <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+                        </button>
+
+                        <ul class="submenu-category-list" data-accordion>
+                            <li class="submenu-category">
+                                <a href="#" class="submenu-title">USD &dollar;</a>
+                            </li>
+
+                            <li class="submenu-category">
+                                <a href="#" class="submenu-title">EUR &euro;</a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="menu-social-container">
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
 
-
-
-
-
-
-
-
     <main>
+        <div class="banner">
+            <div class="container">
+                <div class="slider-container hs-scrollbar">
+                    <div class="slider-item">
+                        <img src="https://img.freepik.com/free-photo/young-woman-shopping-clothes_23-2149187295.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=ais"
+                            alt="women's latest fashion sale" class="banner-img">
+                        <div class="banner-content">
+                            <p class="banner-subtitle">Trending item</p>
 
-
-
-        <section class="profile">
-            <div>
-                <h1>Hello! I'm CJ.<span>A Motion Designer 🍀</span>
-                </h1>
-            </div>
-        </section>
-
-
-        <section class="produc" id="products">
-
-            <div class="produc-container">
-
-                <div class="box">
-                    <video muted loop autoplay class="vide ">
-                        <source src="fil1.mp4" type="video/mp4">
-                    </video>
-
-
-
-
-
-                </div>
-
-
-                <div class="products-container">
-
-
-                    <div class="wrapper">
-                        <div class="video">
-                            <video muted loop autoplay class="video1 hover">
-                                <source src="Frame-3.mp4" type="video/mp4">
-                            </video>
-
-                            <div class="content">
-                                <a href="https://vimeo.com/956788839">Javat 365</a>
-                            </div>
-
-
-                        </div>
-
-
-
-                        <div class="video">
-                            <video muted loop autoplay class="video4">
-                                <source src="fil7.mp4" type="video/mp4">
-                            </video>
-                            <div class="content">
-                                <a href="https://vimeo.com/manage/videos/901803820">Chowdeck </a>
-                            </div>
-
+                            <h2 class="banner-title">women's latest fashion sale</h2>
+                            <p class="banner-text">
+                                starting at &dollar; <b>20</b>.00
+                            </p>
+                            <a hre="#" class="banner-btn">Shop now</a>
                         </div>
                     </div>
 
+                    <div class="slider-item">
+                        <img src="https://img.freepik.com/free-photo/happy-man-with-handbags-dancing-after-shopping-spree_482257-18132.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=ais"
+                            alt="women's latest fashion sale" class="banner-img">
+                        <div class="banner-content">
+                            <p class="banner-subtitle">Trending accessories</p>
 
-                    <div class="wrapper">
-                        <div class="videos">
-                            <video muted loop autoplay class="video2">
-                                <source src="fil3.mp4" type="video/mp4">
-                            </video>
-                            <div class="content">
-
-                                <a href="https://vimeo.com/manage/videos/820234680">
-                                    Bolt </a>
-
-
-                            </div>
-
-                        </div>
-                        <div class="videos">
-                            <video muted loop autoplay class="video5">
-                                <source src="fil6.mp4" type="video/mp4">
-                            </video>
-                            <div class="content">
-                                <a href="https://vimeo.com/manage/videos/877530693">3D Exploration</a>
-                            </div>
-
-                        </div>
-
-                        <div class="videos">
-                            <video muted loop autoplay class="video5">
-                                <source src="fil8.mp4" type="video/mp4">
-                            </video>
-                            <div class="content">
-                                <a href="https://vimeo.com/manage/videos/880464711">Crowdr - Fundraising</a>
-                            </div>
-                        </div>
-                        <div class="videos">
-                            <video muted loop autoplay class="video5">
-                                <source src="fil2.mp4" type="video/mp4">
-                            </video>
-
-                            <div class="content">
-
-                                <a href="https://vimeo.com/manage/videos/850342110">ContentMorph AI</a>
-                            </div>
-
-
+                            <h2 class="banner-title">Modern sunglasses</h2>
+                            <p class="banner-text">
+                                starting at &dollar; <b>15</b>.00
+                            </p>
+                            <a hre="#" class="banner-btn">Shop now</a>
                         </div>
                     </div>
-                    <div>
-                        <div class="video">
-                            <video muted loop autoplay class="video3">
-                                <source src="film.mp4" type="video/mp4">
-                            </video>
-                            <div class="content">
 
-                                <a href="https://vimeo.com/manage/videos/809731978">Patch Logistics</a>
+                    <div class="slider-item">
+                        <img src="https://img.freepik.com/free-photo/young-african-american-woman-shopping-with-colorful-packs-black-background-attractive-female-model_155003-41697.jpg?size=626&ext=jpg&ga=GA1.1.504372548.1700062447&semt=ais"
+                            alt="women's latest fashion sale" class="banner-img">
+                        <div class="banner-content">
+                            <p class="banner-subtitle">sale Offer</p>
 
-
-                            </div>
-                        </div>
-                        <div class="video">
-                            <video muted loop autoplay class="video3">
-                                <source src="fil5.mp4" type="video/mp4">
-                            </video>
-                            <div class="content">
-                                <a href="https://vimeo.com/manage/videos/856165538">Digcey App</a>
-                            </div>
-
-                            <!-- <div class="content">
-                                    <a href="https://vimeo.com/manage/videos/901803820">Chowdeck - Food
-                                        Logistics</a>
-                                </div> -->
-
-                            <!-- <div class="content6">
-                                    <a href="https://vimeo.com/manage/videos/866067744">Dreamax Community</a>
-                                </div> -->
+                            <h2 class="banner-title">New fashion summer sale</h2>
+                            <p class="banner-text">
+                                starting at &dollar; <b>29</b>.00
+                            </p>
+                            <a hre="#" class="banner-btn">Shop now</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="category">
+            <div class="container">
+                <div class="category-item-container has-scrollbar">
+                    <div class="category-item">
+                        <div class="category-img-box">
+                            <img src="https://img.freepik.com/free-photo/confident-african-businesswoman-smiling-closeup-portrait-jobs-career-campaign_53876-143280.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                alt="dress & frock" width="30">
+                        </div>
+
+                        <div class="category-content-box">
+                            <div class="category-content-flex">
+                                <h3 class="category-item-title">Dress & frock</h3>
+                                <p class="category-item-amount">(53)</p>
+
+
+                            </div>
+                            <a href="#" class="category-btn">Show all</a>
+                        </div>
+                    </div>
+
+                    <div class="category-item">
+                        <div class="category-img-box">
+                            <img src="https://img.freepik.com/free-photo/confident-african-businesswoman-smiling-closeup-portrait-jobs-career-campaign_53876-143280.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                alt="dress & frock" width="30">
+                        </div>
+
+                        <div class="category-content-box">
+                            <div class="category-content-flex">
+                                <h3 class="category-item-title">frock</h3>
+                                <p class="category-item-amount">(53)</p>
+
+
+                            </div>
+                            <a href="#" class="category-btn">Show all</a>
+                        </div>
+                    </div>
+
+                    <div class="category-item">
+                        <div class="category-img-box">
+                            <img src="https://img.freepik.com/free-photo/confident-african-businesswoman-smiling-closeup-portrait-jobs-career-campaign_53876-143280.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                alt="dress & frock" width="30">
+                        </div>
+
+                        <div class="category-content-box">
+                            <div class="category-content-flex">
+                                <h3 class="category-item-title">Dress & frock</h3>
+                                <p class="category-item-amount">(53)</p>
+
+
+                            </div>
+                            <a href="#" class="category-btn">Show all</a>
+                        </div>
+                    </div>
+
+                    <div class="category-item">
+                        <div class="category-img-box">
+                            <img src="https://img.freepik.com/free-photo/confident-african-businesswoman-smiling-closeup-portrait-jobs-career-campaign_53876-143280.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                alt="dress & frock" width="30">
+                        </div>
+
+                        <div class="category-content-box">
+                            <div class="category-content-flex">
+                                <h3 class="category-item-title">Dress & frock</h3>
+                                <p class="category-item-amount">(53)</p>
+
+                                <a href="#" class="category-btn">Show all</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-item">
+                        <div class="category-img-box">
+                            <img src="https://img.freepik.com/free-photo/confident-african-businesswoman-smiling-closeup-portrait-jobs-career-campaign_53876-143280.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                alt="dress & frock" width="30">
+                        </div>
+
+                        <div class="category-content-box">
+                            <div class="category-content-flex">
+                                <h3 class="category-item-title">Dress & frock</h3>
+                                <p class="category-item-amount">(53)</p>
+
+                                <a href="#" class="category-btn">Show all</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-item">
+                        <div class="category-img-box">
+                            <img src="https://img.freepik.com/free-photo/confident-african-businesswoman-smiling-closeup-portrait-jobs-career-campaign_53876-143280.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                alt="dress & frock" width="30">
+                        </div>
+
+                        <div class="category-content-box">
+                            <div class="category-content-flex">
+                                <h3 class="category-item-title">Dress & frock</h3>
+                                <p class="category-item-amount">(53)</p>
+
+                                <a href="#" class="category-btn">Show all</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-item">
+                        <div class="category-img-box">
+                            <img src="https://img.freepik.com/free-photo/confident-african-businesswoman-smiling-closeup-portrait-jobs-career-campaign_53876-143280.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                alt="dress & frock" width="30">
+                        </div>
+
+                        <div class="category-content-box">
+                            <div class="category-content-flex">
+                                <h3 class="category-item-title">Dress & frock</h3>
+                                <p class="category-item-amount">(53)</p>
+
+                                <a href="#" class="category-btn">Show all</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-item">
+                        <div class="category-img-box">
+                            <img src="https://img.freepik.com/free-photo/confident-african-businesswoman-smiling-closeup-portrait-jobs-career-campaign_53876-143280.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                alt="dress & frock" width="30">
+                        </div>
+
+                        <div class="category-content-box">
+                            <div class="category-content-flex">
+                                <h3 class="category-item-title">Dress & frock</h3>
+                                <p class="category-item-amount">(53)</p>
+
+                                <a href="#" class="category-btn">Show all</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <div class="product-container">
+            <div class="container">
+                <div class="sidebar  has-scrollbar" data-mobile-menu>
+                    <div class="sidebar-category">
+                        <div class="sidebar-top">
+                            <h2 class="sidebar-title">category</h2>
+
+                            <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                                <ion-icon name="close-outline"></ion-icon>
+                            </button>
+                        </div>
+
+                        <ul class="sidebar-menu-category-list">
+                            <li class="sidebar-menu-category">
+                                <button class="sidebar-accordion-menu" data-accordion-btn>
+                                    <div class="menu-title-flex">
+                                        <img src="https://img.freepik.com/premium-vector/smiling-young-woman-point-up-good-deal-offer-happy-girl-show-with-fingers-up-recommend-good-sale-discount-copy-space-vector-illustration_140689-7327.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                            alt="clothes" width="20" height="20" class="menu-title-img">
+                                        <p class="menu-title">Clothes</p>
+                                    </div>
+
+                                    <div>
+                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                                    </div>
+                                </button>
+
+                                <ul class="sidebar-submenu-category-list" data-accordion>
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="sidebar-menu-category">
+                                <button class="sidebar-accordion-menu" data-accordion-btn>
+                                    <div class="menu-title-flex">
+                                        <img src="https://img.freepik.com/premium-vector/smiling-young-woman-point-up-good-deal-offer-happy-girl-show-with-fingers-up-recommend-good-sale-discount-copy-space-vector-illustration_140689-7327.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                            alt="clothes" width="20" height="20" class="menu-title-img">
+                                        <p class="menu-title">Clothes</p>
+                                    </div>
+
+                                    <div>
+                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                                    </div>
+                                </button>
+
+                                <ul class="sidebar-submenu-category-list">
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="sidebar-menu-category">
+                                <button class="sidebar-accordion-menu" data-accordion-btn>
+                                    <div class="menu-title-flex">
+                                        <img src="https://img.freepik.com/premium-vector/smiling-young-woman-point-up-good-deal-offer-happy-girl-show-with-fingers-up-recommend-good-sale-discount-copy-space-vector-illustration_140689-7327.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                            alt="clothes" width="20" height="20" class="menu-title-img">
+                                        <p class="menu-title">Clothes</p>
+                                    </div>
+
+                                    <div>
+                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                                    </div>
+                                </button>
+
+                                <ul class="sidebar-submenu-category-list">
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="sidebar-menu-category">
+                                <button class="sidebar-accordion-menu" data-accordion-btn>
+                                    <div class="menu-title-flex">
+                                        <img src="https://img.freepik.com/premium-vector/smiling-young-woman-point-up-good-deal-offer-happy-girl-show-with-fingers-up-recommend-good-sale-discount-copy-space-vector-illustration_140689-7327.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                            alt="clothes" width="20" height="20" class="menu-title-img">
+                                        <p class="menu-title">Clothes</p>
+                                    </div>
+
+                                    <div>
+                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                                    </div>
+                                </button>
+
+                                <ul class="sidebar-submenu-category-list">
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="sidebar-menu-category">
+                                <button class="sidebar-accordion-menu" data-accordion-btn>
+                                    <div class="menu-title-flex">
+                                        <img src="https://img.freepik.com/premium-vector/smiling-young-woman-point-up-good-deal-offer-happy-girl-show-with-fingers-up-recommend-good-sale-discount-copy-space-vector-illustration_140689-7327.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                            alt="clothes" width="20" height="20" class="menu-title-img">
+                                        <p class="menu-title">Clothes</p>
+                                    </div>
+
+                                    <div>
+                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                                    </div>
+                                </button>
+
+                                <ul class="sidebar-submenu-category-list">
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="sidebar-menu-category">
+                                <button class="sidebar-accordion-menu" data-accordion-btn>
+                                    <div class="menu-title-flex">
+                                        <img src="https://img.freepik.com/premium-vector/smiling-young-woman-point-up-good-deal-offer-happy-girl-show-with-fingers-up-recommend-good-sale-discount-copy-space-vector-illustration_140689-7327.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                            alt="clothes" width="20" height="20" class="menu-title-img">
+                                        <p class="menu-title">Clothes</p>
+                                    </div>
+
+                                    <div>
+                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                                    </div>
+                                </button>
+
+                                <ul class="sidebar-submenu-category-list">
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="sidebar-menu-category">
+                                <button class="sidebar-accordion-menu" data-accordion-btn>
+                                    <div class="menu-title-flex">
+                                        <img src="https://img.freepik.com/premium-vector/smiling-young-woman-point-up-good-deal-offer-happy-girl-show-with-fingers-up-recommend-good-sale-discount-copy-space-vector-illustration_140689-7327.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                            alt="clothes" width="20" height="20" class="menu-title-img">
+                                        <p class="menu-title">Clothes</p>
+                                    </div>
+
+                                    <div>
+                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                                    </div>
+                                </button>
+
+                                <ul class="sidebar-submenu-category-list">
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-submenu-category">
+                                        <a href="#" class="sidebar-submenu-title">
+                                            <p class="product-name">Shirt</p>
+                                            <data value="300" class="stock" title="Available Stock">300</data>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="product-showcase">
+                        <h3 class="showcase-heading">Best sellers</h3>
+
+                        <div class="showcase-wrapper">
+                            <div class="showcase-container">
+                                <div class="showcase">
+                                    <a href="#" class="showcase-img-box">
+                                        <img src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                            alt="baby fabric shoes" width="75" height="75" class="showcase-img">
+                                    </a>
+
+                                    <div class="showcase-content">
+                                        <a href="#">
+                                            <h4 class="showcase-title">baby fabric shoes</h4>
+                                        </a>
+
+                                        <div class="showcase-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+
+                                        <div class="price-box">
+                                            <del>$5.00</del>
+                                            <p class="price">$4.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="showcase">
+                                    <a href="#" class="showcase-img-box">
+                                        <img src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                            alt="baby fabric shoes" width="75" height="75" class="showcase-img">
+                                    </a>
+
+                                    <div class="showcase-content">
+                                        <a href="#">
+                                            <h4 class="showcase-title">baby fabric shoes</h4>
+                                        </a>
+
+                                        <div class="showcase-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+
+                                        <div class="price-box">
+                                            <del>$5.00</del>
+                                            <p class="price">$4.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="showcase">
+                                    <a href="#" class="showcase-img-box">
+                                        <img src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                            alt="baby fabric shoes" width="75" height="75" class="showcase-img">
+                                    </a>
+
+                                    <div class="showcase-content">
+                                        <a href="#">
+                                            <h4 class="showcase-title">baby fabric shoes</h4>
+                                        </a>
+
+                                        <div class="showcase-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+
+                                        <div class="price-box">
+                                            <del>$5.00</del>
+                                            <p class="price">$4.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="showcase">
+                                    <a href="#" class="showcase-img-box">
+                                        <img src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                            alt="baby fabric shoes" width="75" height="75" class="showcase-img">
+                                    </a>
+
+                                    <div class="showcase-content">
+                                        <a href="#">
+                                            <h4 class="showcase-title">baby fabric shoes</h4>
+                                        </a>
+
+                                        <div class="showcase-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star-half-outline"></ion-icon>
+                                        </div>
+
+                                        <div class="price-box">
+                                            <del>$5.00</del>
+                                            <p class="price">$4.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-box">
+                    <div class="product-minimal">
+                        <div class="product-showcase">
+                            <h2 class="title">New Arrivals</h2>
+                            <div class="showcase-wrapper has-scrollbar">
+                                <div class="showcase-container">
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-container">
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-showcase">
+                            <h2 class="title">New Arrivals</h2>
+                            <div class="showcase-wrapper has-scrollbar">
+                                <div class="showcase-container">
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-container">
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-showcase">
+                            <h2 class="title">New Arrivals</h2>
+                            <div class="showcase-wrapper has-scrollbar">
+                                <div class="showcase-container">
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-container">
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="showcase">
+                                        <a href="#" class="showcase-img-box">
+                                            <img src="https://img.freepik.com/free-photo/african-american-business-woman-by-window_1303-10869.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                                width="70" alt="relaxed short full sleeve t-shirt" class="showcase-img">
+                                        </a>
+
+                                        <div class="showcase-content">
+                                            <a href="#">
+                                                <h4 class="showcase-title">relaxed Short full sleeve T-shirt</h4>
+                                            </a>
+
+                                            <a href="#" class="showcase-category">Clothes</a>
+
+                                            <div class="price-box">
+                                                <p class="price">$45.00</p>
+                                                <del>$12.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-featured">
+                        <h2 class="title">Deal of the day</h2>
+
+                        <div class="showcase-wrapper has-scrollbar">
+                            <div class="showcase-container">
+                                <div class="showcase">
+                                    <div class="showcase-banner">
+                                        <img src="https://img.freepik.com/free-photo/african-american-female-thinking-with-her-finger-her-chin_181624-12252.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                            alt="shampoo, conditioner & facewash packs" class="showcase-img">
+                                    </div>
+
+                                    <div class="showcase-content">
+                                        <div class="showcase-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star-outline"></ion-icon>
+                                            <ion-icon name="star-outline"></ion-icon>
+                                        </div>
+
+                                        <a href="#">
+                                            <h3 class="showcase-title">shampoo, conditioner & facewash</h3>
+                                        </a>
+
+                                        <p class="showcase-desc">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Repudiandae est deleniti eaque praesentium? Enim mollitia
+                                        </p>
+
+                                        <div class="price-box">
+                                            <p class="price">$150.00</p>
+
+                                            <del>$200.00</del>
+                                        </div>
+
+                                        <button class="add-cart-btn">add to cart</button>
+
+                                        <div class="showcase-status">
+                                            <div class="wrapper">
+                                                <p>
+                                                    already sold: <b>20</b>
+                                                </p>
+
+                                                <p>
+                                                    available: <b>40</b>
+                                                </p>
+
+                                            </div>
+
+                                            <div class="showcase-status-bar"></div>
+                                        </div>
+
+                                        <div class="countdown-box">
+
+                                            <p class="countdown-desc">
+                                                Hurry Up! Offer ends in:
+                                            </p>
+
+                                            <div class="countdown">
+                                                <div class="countdown-content">
+                                                    <p class="display-number">360</p>
+                                                    <p class="display-text">Days</p>
+                                                </div>
+
+                                                <div class="countdown-content">
+                                                    <p class="display-number">360</p>
+                                                    <p class="display-text">Days</p>
+                                                </div>
+
+                                                <div class="countdown-content">
+                                                    <p class="display-number">360</p>
+                                                    <p class="display-text">Days</p>
+                                                </div>
+
+                                                <div class="countdown-content">
+                                                    <p class="display-number">360</p>
+                                                    <p class="display-text">Days</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="showcase-container">
+                                <div class="showcase">
+                                    <div class="showcase-banner">
+                                        <img src="https://img.freepik.com/free-photo/african-american-female-thinking-with-her-finger-her-chin_181624-12252.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                            alt="shampoo, conditioner & facewash packs" class="showcase-img">
+                                    </div>
+
+                                    <div class="showcase-content">
+                                        <div class="showcase-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star-outline"></ion-icon>
+                                            <ion-icon name="star-outline"></ion-icon>
+                                        </div>
+
+                                        <a href="#">
+                                            <h3 class="showcase-title">shampoo, conditioner & facewash</h3>
+                                        </a>
+
+                                        <p class="showcase-desc">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Repudiandae est deleniti eaque praesentium? Enim mollitia
+                                        </p>
+
+                                        <div class="price-box">
+                                            <p class="price">$150.00</p>
+
+                                            <del>$200.00</del>
+                                        </div>
+
+                                        <button class="add-cart-btn">add to cart</button>
+
+                                        <div class="showcase-status">
+                                            <div class="wrapper">
+                                                <p>
+                                                    already sold: <b>20</b>
+                                                </p>
+
+                                                <p>
+                                                    available: <b>40</b>
+                                                </p>
+
+                                            </div>
+
+                                            <div class="showcase-status-bar"></div>
+                                        </div>
+
+                                        <div class="countdown-box">
+
+                                            <p class="countdown-desc">
+                                                Hurry Up! Offer ends in:
+                                            </p>
+
+                                            <div class="countdown">
+                                                <div class="countdown-content">
+                                                    <p class="display-number">360</p>
+                                                    <p class="display-text">Days</p>
+                                                </div>
+
+                                                <div class="countdown-content">
+                                                    <p class="display-number">360</p>
+                                                    <p class="display-text">Days</p>
+                                                </div>
+
+                                                <div class="countdown-content">
+                                                    <p class="display-number">360</p>
+                                                    <p class="display-text">Days</p>
+                                                </div>
+
+                                                <div class="countdown-content">
+                                                    <p class="display-number">360</p>
+                                                    <p class="display-text">Days</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-main">
+                        <h2 class="title">New products</h2>
+                        <div class="product-grid">
+                            <div class="showcase">
+                                <div class="showcase-banner">
+
+                                    <img src="https://img.freepik.com/free-photo/portrait-pretty-african-muslim-woman-black-hijab_651396-1755.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img default"> -->
+
+                                    <img src="https://img.freepik.com/free-photo/charismatic-cheerful-attractive-african-american-woman-curly-haircut-wearing-shirt-holding-hands-pockets-confident-outgoing-smiling-talking-pleasant-conversation-feeling-self-assured-relaxed_176420-35345.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img hover"> -->
+
+                                    <p class="showcase-badge">15%</p>
+
+                                    <div class="showcase-actions">
+                                        <button class="btn-action">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="repeat-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="bag-add-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-content">
+                                    <a href="#" class="showcase-category">Jacket</a>
+                                    <a hre="#">
+                                        <h3 class="showcase-title">Mens cloth jacket</h3>
+                                    </a>
+
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="price-box">
+                                        <p class="price">$48.00</p>
+                                        <del>$75.00</del>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="showcase">
+                                <div class="showcase-banner">
+
+                                    <img src="https://img.freepik.com/free-photo/portrait-pretty-african-muslim-woman-black-hijab_651396-1755.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img default">
+
+                                    <img src="https://img.freepik.com/free-photo/charismatic-cheerful-attractive-african-american-woman-curly-haircut-wearing-shirt-holding-hands-pockets-confident-outgoing-smiling-talking-pleasant-conversation-feeling-self-assured-relaxed_176420-35345.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img hover">
+
+                                    <p class="showcase-badge angle black">15%</p>
+
+                                    <div class="showcase-actions">
+                                        <button class="btn-action">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="repeat-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="bag-add-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-content">
+                                    <a href="#" class="showcase-category">Jacket</a>
+                                    <a hre="#">
+                                        <h3 class="showcase-title">Mens cloth jacket</h3>
+                                    </a>
+
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="price-box">
+                                        <p class="price">$48.00</p>
+                                        <del>$75.00</del>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="showcase">
+                                <div class="showcase-banner">
+
+                                    <img src="https://img.freepik.com/free-photo/portrait-pretty-african-muslim-woman-black-hijab_651396-1755.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img default">
+
+                                    <img src="https://img.freepik.com/free-photo/charismatic-cheerful-attractive-african-american-woman-curly-haircut-wearing-shirt-holding-hands-pockets-confident-outgoing-smiling-talking-pleasant-conversation-feeling-self-assured-relaxed_176420-35345.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img hover">
+
+                                    <p class="showcase-badge">15%</p>
+
+                                    <div class="showcase-actions">
+                                        <button class="btn-action">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="repeat-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="bag-add-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-content">
+                                    <a href="#" class="showcase-category">Jacket</a>
+                                    <a hre="#">
+                                        <h3 class="showcase-title">Mens cloth jacket</h3>
+                                    </a>
+
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="price-box">
+                                        <p class="price">$48.00</p>
+                                        <del>$75.00</del>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="showcase">
+                                <div class="showcase-banner">
+
+                                    <img src="https://img.freepik.com/free-photo/portrait-pretty-african-muslim-woman-black-hijab_651396-1755.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img default">
+
+                                    <img src="https://img.freepik.com/free-photo/charismatic-cheerful-attractive-african-american-woman-curly-haircut-wearing-shirt-holding-hands-pockets-confident-outgoing-smiling-talking-pleasant-conversation-feeling-self-assured-relaxed_176420-35345.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img hover">
+
+                                    <p class="showcase-badge angle pink">15%</p>
+
+                                    <div class="showcase-actions">
+                                        <button class="btn-action">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="repeat-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="bag-add-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-content">
+                                    <a href="#" class="showcase-category">Jacket</a>
+                                    <a hre="#">
+                                        <h3 class="showcase-title">Mens cloth jacket</h3>
+                                    </a>
+
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="price-box">
+                                        <p class="price">$48.00</p>
+                                        <del>$75.00</del>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="showcase">
+                                <div class="showcase-banner">
+
+                                    <img src="https://img.freepik.com/free-photo/portrait-pretty-african-muslim-woman-black-hijab_651396-1755.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img default">
+
+                                    <img src="https://img.freepik.com/free-photo/charismatic-cheerful-attractive-african-american-woman-curly-haircut-wearing-shirt-holding-hands-pockets-confident-outgoing-smiling-talking-pleasant-conversation-feeling-self-assured-relaxed_176420-35345.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img hover">
+
+                                    <p class="showcase-badge">15%</p>
+
+                                    <div class="showcase-actions">
+                                        <button class="btn-action">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="repeat-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="bag-add-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-content">
+                                    <a href="#" class="showcase-category">Jacket</a>
+                                    <a hre="#">
+                                        <h3 class="showcase-title">Mens cloth jacket</h3>
+                                    </a>
+
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="price-box">
+                                        <p class="price">$48.00</p>
+                                        <del>$75.00</del>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="showcase">
+                                <div class="showcase-banner">
+
+                                    <img src="https://img.freepik.com/free-photo/portrait-pretty-african-muslim-woman-black-hijab_651396-1755.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img default">
+
+                                    <img src="https://img.freepik.com/free-photo/charismatic-cheerful-attractive-african-american-woman-curly-haircut-wearing-shirt-holding-hands-pockets-confident-outgoing-smiling-talking-pleasant-conversation-feeling-self-assured-relaxed_176420-35345.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img hover">
+
+                                    <p class="showcase-badge">15%</p>
+
+                                    <div class="showcase-actions">
+                                        <button class="btn-action">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="repeat-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="bag-add-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-content">
+                                    <a href="#" class="showcase-category">Jacket</a>
+                                    <a hre="#">
+                                        <h3 class="showcase-title">Mens cloth jacket</h3>
+                                    </a>
+
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="price-box">
+                                        <p class="price">$48.00</p>
+                                        <del>$75.00</del>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="showcase">
+                                <div class="showcase-banner">
+
+                                    <img src="https://img.freepik.com/free-photo/portrait-pretty-african-muslim-woman-black-hijab_651396-1755.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img default">
+
+                                    <img src="https://img.freepik.com/free-photo/charismatic-cheerful-attractive-african-american-woman-curly-haircut-wearing-shirt-holding-hands-pockets-confident-outgoing-smiling-talking-pleasant-conversation-feeling-self-assured-relaxed_176420-35345.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img hover">
+
+                                    <p class="showcase-badge">15%</p>
+
+                                    <div class="showcase-actions">
+                                        <button class="btn-action">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="repeat-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="bag-add-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-content">
+                                    <a href="#" class="showcase-category">Jacket</a>
+                                    <a hre="#">
+                                        <h3 class="showcase-title">Mens cloth jacket</h3>
+                                    </a>
+
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="price-box">
+                                        <p class="price">$48.00</p>
+                                        <del>$75.00</del>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="showcase">
+                                <div class="showcase-banner">
+
+                                    <img src="https://img.freepik.com/free-photo/portrait-pretty-african-muslim-woman-black-hijab_651396-1755.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img default">
+
+                                    <img src="https://img.freepik.com/free-photo/charismatic-cheerful-attractive-african-american-woman-curly-haircut-wearing-shirt-holding-hands-pockets-confident-outgoing-smiling-talking-pleasant-conversation-feeling-self-assured-relaxed_176420-35345.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img hover">
+
+                                    <p class="showcase-badge">15%</p>
+
+                                    <div class="showcase-actions">
+                                        <button class="btn-action">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="repeat-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="bag-add-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-content">
+                                    <a href="#" class="showcase-category">Jacket</a>
+                                    <a hre="#">
+                                        <h3 class="showcase-title">Mens cloth jacket</h3>
+                                    </a>
+
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="price-box">
+                                        <p class="price">$48.00</p>
+                                        <del>$75.00</del>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="showcase">
+                                <div class="showcase-banner">
+
+                                    <img src="https://img.freepik.com/free-photo/portrait-pretty-african-muslim-woman-black-hijab_651396-1755.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img default">
+
+                                    <img src="https://img.freepik.com/free-photo/charismatic-cheerful-attractive-african-american-woman-curly-haircut-wearing-shirt-holding-hands-pockets-confident-outgoing-smiling-talking-pleasant-conversation-feeling-self-assured-relaxed_176420-35345.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img hover">
+
+                                    <p class="showcase-badge">15%</p>
+
+                                    <div class="showcase-actions">
+                                        <button class="btn-action">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="repeat-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="bag-add-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-content">
+                                    <a href="#" class="showcase-category">Jacket</a>
+                                    <a hre="#">
+                                        <h3 class="showcase-title">Mens cloth jacket</h3>
+                                    </a>
+
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="price-box">
+                                        <p class="price">$48.00</p>
+                                        <del>$75.00</del>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="showcase">
+                                <div class="showcase-banner">
+
+                                    <img src="https://img.freepik.com/free-photo/portrait-pretty-african-muslim-woman-black-hijab_651396-1755.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img default">
+
+                                    <img src="https://img.freepik.com/free-photo/charismatic-cheerful-attractive-african-american-woman-curly-haircut-wearing-shirt-holding-hands-pockets-confident-outgoing-smiling-talking-pleasant-conversation-feeling-self-assured-relaxed_176420-35345.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img hover">
+
+                                    <p class="showcase-badge">15%</p>
+
+                                    <div class="showcase-actions">
+                                        <button class="btn-action">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="repeat-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="bag-add-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-content">
+                                    <a href="#" class="showcase-category">Jacket</a>
+                                    <a hre="#">
+                                        <h3 class="showcase-title">Mens cloth jacket</h3>
+                                    </a>
+
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="price-box">
+                                        <p class="price">$48.00</p>
+                                        <del>$75.00</del>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="showcase">
+                                <div class="showcase-banner">
+
+                                    <img src="https://img.freepik.com/free-photo/portrait-pretty-african-muslim-woman-black-hijab_651396-1755.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img default">
+
+                                    <img src="https://img.freepik.com/free-photo/charismatic-cheerful-attractive-african-american-woman-curly-haircut-wearing-shirt-holding-hands-pockets-confident-outgoing-smiling-talking-pleasant-conversation-feeling-self-assured-relaxed_176420-35345.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img hover">
+
+                                    <p class="showcase-badge">15%</p>
+
+                                    <div class="showcase-actions">
+                                        <button class="btn-action">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="repeat-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="bag-add-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-content">
+                                    <a href="#" class="showcase-category">Jacket</a>
+                                    <a hre="#">
+                                        <h3 class="showcase-title">Mens cloth jacket</h3>
+                                    </a>
+
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="price-box">
+                                        <p class="price">$48.00</p>
+                                        <del>$75.00</del>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="showcase">
+                                <div class="showcase-banner">
+
+                                    <img src="https://img.freepik.com/free-photo/portrait-pretty-african-muslim-woman-black-hijab_651396-1755.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img default">
+
+                                    <img src="https://img.freepik.com/free-photo/charismatic-cheerful-attractive-african-american-woman-curly-haircut-wearing-shirt-holding-hands-pockets-confident-outgoing-smiling-talking-pleasant-conversation-feeling-self-assured-relaxed_176420-35345.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=sph"
+                                        alt="Mens winter Leather" width="300" class="product-img hover">
+
+                                    <p class="showcase-badge">15%</p>
+
+                                    <div class="showcase-actions">
+                                        <button class="btn-action">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="repeat-outline"></ion-icon>
+                                        </button>
+
+                                        <button class="btn-action">
+                                            <ion-icon name="bag-add-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="showcase-content">
+                                    <a href="#" class="showcase-category">Jacket</a>
+                                    <a hre="#">
+                                        <h3 class="showcase-title">Mens cloth jacket</h3>
+                                    </a>
+
+                                    <div class="showcase-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                        <ion-icon name="star-outline"></ion-icon>
+                                    </div>
+
+                                    <div class="price-box">
+                                        <p class="price">$48.00</p>
+                                        <del>$75.00</del>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-        </section>
+        <div>
+            <div class="container">
+                <div class="testimonials-box">
+                    <div class="testimonial">
+                        <h2 class="title">testimonial</h2>
+                        <div class="testimonial-card">
+                            <img src="https://img.freepik.com/free-photo/man-isolated-showing-emotions-end-gestures_1303-30095.jpg?size=626&ext=jpg&ga=GA1.1.504372548.1700062447&semt=sph"
+                                alt="alan doe" class="testimonial-banner" width="80" height="80">
 
-        <section>
-            <div>
-                <ul class="footer--social">
-                    <a href="https://www.linkedin.com/in/melody-okpara-774050283" target="_blank"
-                        class="footer--social link"><i class='bx bxl-linkedin'></i>
-                    </a>
-                    <a href="https://www.instagram.com/okparamelodyy" target="_blank" class="footer--social link">
-                        <i class='bx bxl-instagram'></i>
-                    </a>
-                    <a href="https://x.com/melodyokpara_" target="_blank" class="footer--social link">
-                        <i class='bx bxl-twitter'></i>
-                    </a>
+                            <p class="testimonial-name">Alan Doe</p>
+                            <p class="testimonial-title">CEO & founder Invision</p>
+                            <img src="https://img.freepik.com/premium-vector/qoutes-symbol-typographic-black-marks-citation-symbol_176411-4567.jpg?size=626&ext=jpg&ga=GA1.2.504372548.1700062447&semt=ais"
+                                alt="quotation" class="quotation-img" width="26">
+                            <p class="testimonial-desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
 
-                    <a href="https://vimeo.com/cjokpara" target="_blank" class="footer--social link">
-                        <i class='bx bxl-vimeo'></i>
-                    </a>
+                    <div class="cta-container">
+                        <img src="https://img.freepik.com/free-photo/man-isolated-showing-emotions-end-gestures_1303-30095.jpg?size=626&ext=jpg&ga=GA1.1.504372548.1700062447&semt=sph"
+                            alt="summer collection" class="cta-banner">
 
+                        <a href="#" class="cta-content">
+                            <p class="discount">25% Discount</p>
+
+                            <h2 class="cta-title">Summer collection</h2>
+
+                            <p class="cta-text">Starting @ $10</p>
+
+                            <button class="cta-btn">Shop now</button>
+                        </a>
+                    </div>
+
+
+                    <div class="service">
+                        <h2 class="title">Our Services</h2>
+
+                        <div class="service-container">
+                            <a href="#" class="service-item">
+                                <div class="service-icon">
+                                    <ion-icon name="boat-outline"></ion-icon>
+                                </div>
+
+                                <div class="service-content">
+                                    <h3 class="service-title">Worldwide Delivery</h3>
+                                    <p class="service-desc">For Order Over $100</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="service-item">
+                                <div class="service-icon">
+                                    <ion-icon name="boat-outline"></ion-icon>
+                                </div>
+
+                                <div class="service-content">
+                                    <h3 class="service-title">Worldwide Delivery</h3>
+                                    <p class="service-desc">For Order Over $100</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="service-item">
+                                <div class="service-icon">
+                                    <ion-icon name="boat-outline"></ion-icon>
+                                </div>
+
+                                <div class="service-content">
+                                    <h3 class="service-title">Worldwide Delivery</h3>
+                                    <p class="service-desc">For Order Over $100</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="service-item">
+                                <div class="service-icon">
+                                    <ion-icon name="boat-outline"></ion-icon>
+                                </div>
+
+                                <div class="service-content">
+                                    <h3 class="service-title">Worldwide Delivery</h3>
+                                    <p class="service-desc">For Order Over $100</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="service-item">
+                                <div class="service-icon">
+                                    <ion-icon name="boat-outline"></ion-icon>
+                                </div>
+
+                                <div class="service-content">
+                                    <h3 class="service-title">Worldwide Delivery</h3>
+                                    <p class="service-desc">For Order Over $100</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="Blog">
+            <div class="container">
+                <div class="blog-container has-scrollbar">
+                    <div class="blog-card">
+
+                        <a href="#">
+                            <img src="https://img.freepik.com/free-photo/african-woman-successful-entrepreneur-wearing-glasses-face-portrait_53876-148050.jpg?size=626&ext=jpg&ga=GA1.1.504372548.1700062447&semt=sph"
+                                alt="clothes hdjdhfkfmvnhf dfj" width="300" class="Blog-banner">
+                        </a>
+
+                        <div class="blog-content">
+                            <a href="#" class="blog-category">Fashion</a>
+
+                            <a href="#">
+                                <h3 class="blog-title">Clothes retail for clothes</h3>
+                            </a>
+
+                            <p class="blog-meta">
+                                By <cite>Mr Admiin</cite> / <time datetime="2023-12-17">Dec 17, 2023</time>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="blog-card">
+
+                        <a href="#">
+                            <img src="https://img.freepik.com/free-photo/african-woman-successful-entrepreneur-wearing-glasses-face-portrait_53876-148050.jpg?size=626&ext=jpg&ga=GA1.1.504372548.1700062447&semt=sph"
+                                alt="clothes hdjdhfkfmvnhf dfj" width="300" class="Blog-banner">
+                        </a>
+
+                        <div class="blog-content">
+                            <a href="#" class="blog-category">Fashion</a>
+
+                            <a href="#">
+                                <h3 class="blog-title">Clothes retail for clothes</h3>
+                            </a>
+
+                            <p class="blog-meta">
+                                By <cite>Mr Admiin</cite> / <time datetime="2023-12-17">Dec 17, 2023</time>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="blog-card">
+
+                        <a href="#">
+                            <img src="https://img.freepik.com/free-photo/african-woman-successful-entrepreneur-wearing-glasses-face-portrait_53876-148050.jpg?size=626&ext=jpg&ga=GA1.1.504372548.1700062447&semt=sph"
+                                alt="clothes hdjdhfkfmvnhf dfj" width="300" class="Blog-banner">
+                        </a>
+
+                        <div class="blog-content">
+                            <a href="#" class="blog-category">Fashion</a>
+
+                            <a href="#">
+                                <h3 class="blog-title">Clothes retail for clothes</h3>
+                            </a>
+
+                            <p class="blog-meta">
+                                By <cite>Mr Admiin</cite> / <time datetime="2023-12-17">Dec 17, 2023</time>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="blog-card">
+
+                        <a href="#">
+                            <img src="https://img.freepik.com/free-photo/african-woman-successful-entrepreneur-wearing-glasses-face-portrait_53876-148050.jpg?size=626&ext=jpg&ga=GA1.1.504372548.1700062447&semt=sph"
+                                alt="clothes hdjdhfkfmvnhf dfj" width="300" class="Blog-banner">
+                        </a>
+
+                        <div class="blog-content">
+                            <a href="#" class="blog-category">Fashion</a>
+
+                            <a href="#">
+                                <h3 class="blog-title">Clothes retail for clothes</h3>
+                            </a>
+
+                            <p class="blog-meta">
+                                By <cite>Mr Admiin</cite> / <time datetime="2023-12-17">Dec 17, 2023</time>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-category">
+            <div class="container">
+                <h2 class="footer-category-title">Brand directory</h2>
+
+                <div class="footer-category-box">
+
+                    <h3 class="category-box-title">fashion :</h3>
+
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                </div>
+
+                <div class="footer-category-box">
+
+                    <h3 class="category-box-title">fashion :</h3>
+
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                </div>
+
+                <div class="footer-category-box">
+
+                    <h3 class="category-box-title">fashion :</h3>
+
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                </div>
+
+                <div class="footer-category-box">
+
+                    <h3 class="category-box-title">fashion :</h3>
+
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                </div>
+
+                <div class="footer-category-box">
+
+                    <h3 class="category-box-title">fashion :</h3>
+
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                    <a href="#" class="footer-category-link">t-shirt</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-nav">
+            <div class="container">
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item">
+                        <h2 clas="nav-title">popular categories</h2>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
                 </ul>
 
-                <span class="footer--copy">
-                    &#169; 2024 by melody Okpara
-                </span>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item">
+                        <h2 clas="nav-title">popular categories</h2>
+                    </li>
 
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item">
+                        <h2 clas="nav-title">popular categories</h2>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item">
+                        <h2 clas="nav-title">popular categories</h2>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item">
+                        <h2 clas="nav-title">popular categories</h2>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Contact</h2>
+                    </li>
+
+                    <li class="footer-nav-item flex">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <address class="content">
+                            419 star-outline
+                            beaver newyork
+                        </address>
+                    </li>
+
+                    <li class="footer-nav-item flex">
+                        <div class="icon-box">
+                            <ion-icon name="call-outline"></ion-icon>
+
+                        </div>
+                        <a href="tel:+38496378" class="footer-nav-link">(739) 6489 593</a>
+                    </li>
+
+                    <li class="footer-nav-item flex">
+                        <div class="icon-box">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </div>
+                        <a href="mailto:gmail.com" class="footer-nav-link">gmail.com</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Follow Us</h2>
+                    </li>
+
+                    <li>
+                        <ul class="social-link">
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
+        </div>
 
+        <div class="footer-bottom">
+            <div class="container">
+                <img src="https://img.freepik.com/free-vector/realistic-credit-card-design_23-2149126088.jpg?size=626&ext=jpg&ga=GA1.1.504372548.1700062447&semt=ais"
+                    alt="payment method" class="payment-img" width="50">
 
+                <p class="copyright">
+                    copyright &copy; <a href="#">Anon</a> all right reserved
+                </p>
+            </div>
+        </div>
+    </footer>
 
-        </section>
-
-
-
-
-
-
-
-
-    </main>
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class='bx bx-chevrons-up'></i>
-    </a>
-
+    <script src="work.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="devices.js"></script>
 </body>
 
 </html>
